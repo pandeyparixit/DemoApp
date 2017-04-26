@@ -10,6 +10,26 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
 
+## Build in bootstrap 4.0.0-alpha.6 lastest using SCSS.
+
+1. Create Angular App using Angular CLI
+Ng new DemoAPP
+
+2. Install bootstrap
+npm install bootstrap@4.0.0-alpha.6
+"styles": [
+        "styles/main.scss",
+        "../node_modules/bootstrap/scss/bootstrap"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/tether/dist/js/tether.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.js"
+      ],
+
+3. Set saas as default programmatically 
+ng set defaults.styleExt scss
+
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
