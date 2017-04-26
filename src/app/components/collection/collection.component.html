@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row first">
+    <button type="button" class="btn btn-primary">Add</button>
+  </div>
+  <div class="row">
+    <div class="col-12">
+    <ul class="list-group" *ngIf="collections.length > 0">
+      <li class="list-group-item justify-content-between" *ngFor="let item of collections">
+        <button type="button" class="btn btn-danger" (click)="removeFromCart(item)" >Remove to cart</button>
+        {{ item.description }}
+        <span class="badge badge-default badge-pill"> {{item.type}}</span>
+      </li>
+    </ul>
+    <h3 *ngIf="collections.length === 0">Please add some items from Material.</h3>
+    </div>
+  </div>
+</div>
